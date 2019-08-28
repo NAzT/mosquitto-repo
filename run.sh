@@ -13,3 +13,4 @@ docker run  -d -it --restart=always -p 1883:1883 -p 9001:9001 --name $CONTAINER_
 
 docker inspect $CONTAINER_NAME -f {{.HostConfig.Binds}}
 #sudo sh -c "truncate -s 0 /var/lib/docker/containers/*/*-json.log"
+#sudo sh -c "ls -ahl /var/lib/docker/containers/*/*-json.log"
